@@ -19,6 +19,7 @@ public class JDBCUtil {
 
             // Lấy kết nối
             conn = DriverManager.getConnection(url, username, password);
+            System.out.println("Successfully");
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
         }
